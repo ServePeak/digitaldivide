@@ -110,6 +110,7 @@ for rowindex, house in housearray.iterrows():
             writer.writerows(a)
             print "CSV of household link stats written to %s" % tfile
 
+    if args.validate and args.rspec:
         star.add_validate_services()
 
 if args.rspec:

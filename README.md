@@ -1,3 +1,17 @@
+# This is a modified version of digitaldivide to work with VR testing
+This version assumes that enp3s0f1 is upload, and enx000ec688fc5c is download. To change these, start at line 94 in /src/digitaldivideutil.py
+Setup guide:
+```
+git clone https://github.com/ServePeak/digitaldivide
+cd digitaldivide
+bash util/install.sh
+```
+To automatically setup a household, run
+```
+bash util/emulate_house.sh
+```
+This can be rerun for each household, as it will clear and setup everything for you
+
 # Bridging the empathy gap between web developers and users
 
 In this experiment, you'll set up a topology on GENI that uses realistic link characteristics, based on measurements from actual US households. 
